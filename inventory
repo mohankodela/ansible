@@ -2,18 +2,17 @@
 172.179.1.2
 
 [web]
-192.168.0.1
-192.168.0.2
+54.145.131.4
 
 [catalouge]
 192.168.0.3
-192.168.0.3
+192.168.0.4
 
 [cart]
 192.168.0.5
 192.168.0.6
 
-[roboshob:children]
+[roboshop:children]
 web
 catalouge
 cart

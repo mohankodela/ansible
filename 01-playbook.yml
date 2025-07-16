@@ -1,2 +1,5 @@
 - name: ping playbook with yaml
-   
+  hosts: web
+  tasks:
+  - name: ping the server
+    ansible.builin.ping:   
