@@ -4,11 +4,11 @@
   tasks:
     - name: print pesrsons
       ansible.builtin.package:
-        name: "{{item}}"
+        name: "{{item.name}}"
         state: present
       loop:
-      - git
-      - mysql
-      - postfix
+      - {name: 'git', state: 'present' }
+      - {name: 'mysql', state: 'absent'}
+      - {name: 'postfix', state: 'present'}
 
 
