@@ -3,8 +3,8 @@
   vars:
     PERSON: "Mohan from PLAY"
     WISHES: "Morning"
-  vars_files:
-    - variables.yml
+  # vars_files:
+  #   - variables.yml
   vars_prompt:
     - name: PERSON
       prompt: Enter Personname
