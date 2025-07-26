@@ -1,0 +1,10 @@
+- name: condotions
+  hosts: localhost
+  tasks:
+    - name: check if user exists or not
+      ansible.builtin.command: id roboshop
+      register: user
+    
+    - name: print user name
+      ansible.builtin.debug:
+        msg: "User output {{user}}"
