@@ -12,7 +12,7 @@
   #   - name: WISHES
   #     prompt: Enter WISHES
   #     private: false
-  tasks:
+- tasks:
     # - name: Inside Task
       # vars:
       #   PERSON: "Mohan from TASK"
