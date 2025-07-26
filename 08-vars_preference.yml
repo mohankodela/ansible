@@ -13,9 +13,9 @@
   #     prompt: Enter WISHES
   #     private: false
   tasks:
-    - name: Inside Task
+    # - name: Inside Task
       # vars:
       #   PERSON: "Mohan from TASK"
       #   WISHES: "Morning"
-      ansible.builtin.debug:
+    - ansible.builtin.debug:
         msg: "Hello {{PERSON}}, Good {{WISHES}}"
