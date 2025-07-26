@@ -1,0 +1,21 @@
+- name : Checking Preferences
+  hosts: localhost
+  vars:
+    PERSON: "Mohan from PLAY"
+    WISHES: "Morning"
+  vars_files:
+    - variables.yml
+  vars_prompt:
+    - name: PERSON
+      prompt: Enter Personname
+      private: false
+    - name: WISHES
+      prompt: Enter WISHES
+      private: false
+  tasks:
+    - name: Inside Task
+      vars:
+        PERSON: "Mohan from TASK"
+        WISHES: "Morning"
+      ansible.builtin.debug:
+        msg: "Hello {{PERSON}}, Good {{WISHES}}"
