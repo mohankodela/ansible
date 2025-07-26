@@ -5,8 +5,8 @@
     Trainer: "Siva Kumar"
     Experience: "10 Yrs"
   tasks:
-  - name: check 
-    Vars:
+  - name: check variables
+    vars:
       Course: "DevOps with AWS"
     ansible.builtin.debug:
       msg: "Hi I am learning {{Course}}, Trainer is {{Trainer}} and Experience is {{Experience}}"
