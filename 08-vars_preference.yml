@@ -14,8 +14,8 @@
       private: false
   tasks:
     - name: Inside Task
-      vars:
-        PERSON: "Mohan from TASK"
-        WISHES: "Morning"
+      # vars:
+      #   PERSON: "Mohan from TASK"
+      #   WISHES: "Morning"
       ansible.builtin.debug:
         msg: "Hello {{PERSON}}, Good {{WISHES}}"
