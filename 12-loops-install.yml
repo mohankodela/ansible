@@ -3,7 +3,8 @@
   tasks:
     - name: print pesrsons
       ansible.builtin.package:
-        msg: "{{item}} "
+        msg: "{{item}}"
+        state: present
       loop:
       - git
       - mysql
