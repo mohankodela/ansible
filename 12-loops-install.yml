@@ -5,7 +5,7 @@
     - name: print pesrsons
       ansible.builtin.package:
         name: "{{item.name}}"
-        state: present
+        state: "{{item.state}}"
       loop:
       - {name: 'git', state: 'present' }
       - {name: 'mysql', state: 'absent'}
