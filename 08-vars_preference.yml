@@ -1,8 +1,8 @@
 - name : Checking Preferences
   hosts: localhost
-  vars:
-    PERSON: "Mohan from PLAY"
-    WISHES: "Morning"
+  # vars:
+  #   PERSON: "Mohan from PLAY"
+  #   WISHES: "Morning"
   # vars_files:
   #   - variables.yml
   # vars_prompt:
