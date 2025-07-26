@@ -3,7 +3,7 @@
   tasks:
     - name: print pesrsons
       ansible.builtin.package:
-        msg: "{{item}}"
+        name: "{{item}}"
         state: present
       loop:
       - git
