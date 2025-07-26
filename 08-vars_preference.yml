@@ -5,13 +5,13 @@
     WISHES: "Morning"
   # vars_files:
   #   - variables.yml
-  vars_prompt:
-    - name: PERSON
-      prompt: Enter Personname
-      private: false
-    - name: WISHES
-      prompt: Enter WISHES
-      private: false
+  # vars_prompt:
+  #   - name: PERSON
+  #     prompt: Enter Personname
+  #     private: false
+  #   - name: WISHES
+  #     prompt: Enter WISHES
+  #     private: false
   tasks:
     - name: Inside Task
       # vars:
