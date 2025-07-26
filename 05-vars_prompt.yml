@@ -11,4 +11,5 @@
     - name: Print variables from prompt
       ansible.builtin.debug:
         msg: "User is {{USERNAME}}"
-        msg: "Password is {{PASSWORD}}"  
+      ansible.builtin.debug:
+          msg: "Password is {{PASSWORD}}"  
