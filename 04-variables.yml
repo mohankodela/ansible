@@ -1,9 +1,7 @@
 - name: variables from Play level
   hosts: localhost
-  vars:
-    Course: "DevOps"
-    Trainer: "Siva Kumar"
-    Experience: "10 Yrs"
+  vars_files:
+  - variables.yml
   tasks:
   - name: check variables
     vars:
