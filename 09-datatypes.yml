@@ -1,0 +1,27 @@
+- name: Datatypes
+  hosts: localhost
+  vars:
+    Name: "Mohan Krishna"
+    Age: "33"
+    Skills:
+      - Linux
+      - Apache
+      - Shell
+      - DevOps
+    Experience:
+      Linux: 4
+      Apache: 8
+      DevOps: 2
+    Professional: true
+  tasks:
+    - name: Printing key pair
+      ansible.builtin.debug:
+        msg:
+          - "Name: {{Name}}"
+          - "Age: {{Age}}"
+    - name: Printing List
+      ansible.builtin.debug:
+        msg: "Skills: {{Skills}}"
+    - name: Printing Map Values
+      ansible.builtin.debug:
+        msg: "Experience: {{Experience}}"
