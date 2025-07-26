@@ -6,7 +6,7 @@
     Experience: "10 Yrs"
   tasks:
   - name: check 
-    vars:
+    Vars:
       Course: "DevOps with AWS"
     ansible.builtin.debug:
       msg: "Hi I am learning {{Course}}, Trainer is {{Trainer}} and Experience is {{Experience}}"
