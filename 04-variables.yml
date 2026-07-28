@@ -2,7 +2,7 @@
 - name: Variables
   hosts: local
   connection: local
-  vars:
+  vars_files:
     variables.yml
   tasks:
     - name: Print Variables
