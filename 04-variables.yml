@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars_files:
-    variables.yml
+    - variables.yml
   tasks:
     - name: Print Variables
       debug:
