@@ -1,10 +1,8 @@
-- name: variables from Play level
-  hosts: localhost
-  vars_files:
-  - variables.yml
+---
+- name: Variables
+  hosts: local
+  connection: local
   tasks:
-  - name: check variables
-    vars:
-      # Course: "DevOps with AWS"
-    ansible.builtin.debug:
-      msg: "Hi I am learning {{Course}}, Trainer is {{Trainer}} and Experience is {{Experience}}"
+    - name: Print Variables
+      debug:
+        msg: " Mohan is working in Accenture from past 5 years"
