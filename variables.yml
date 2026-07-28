@@ -1,6 +1,10 @@
-Course: "DevOps"
-Trainer: "Siva Kumar"
-Experience: "10 Yrs"
+# Course: "DevOps"
+# Trainer: "Siva Kumar"
+# Experience: "10 Yrs"
 
-PERSON: "Mohan from FILE"
-WISHES: "Morning"
+# PERSON: "Mohan from FILE"
+# WISHES: "Morning"
+
+NAME: Mohan
+COMPANY: Accenture
+DURATION: 5

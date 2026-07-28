@@ -3,9 +3,7 @@
   hosts: local
   connection: local
   vars:
-    NAME: Mohan
-    COMPANY: Accenture
-    DURATION: 5
+    variables.yml
   tasks:
     - name: Print Variables
       debug:
