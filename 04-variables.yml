@@ -2,7 +2,11 @@
 - name: Variables
   hosts: local
   connection: local
+  vars:
+    NAME: Mohan
+    COMPANY: Accenture
+    DURATION: 5
   tasks:
     - name: Print Variables
       debug:
-        msg: " Mohan is working in Accenture from past 5 years"
+        msg: " {{ NAME }} is working in {{ COMPANY }} from past {{ DURATION }} years"
