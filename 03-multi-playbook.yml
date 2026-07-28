@@ -1,14 +1,25 @@
-- name: Play - 1
-  hosts: localhost
+---
+- name: Multiplay 1
+  hosts: web
+  connection: local
   tasks:
-    - name: Task 1
-      ansible.builtin.debug:
-        msg: "Hi from Task 1"
-  
-- name: Play - 2
-  hosts: localhost
+    - name: Play 1 Task 1
+      debug:
+        msg: "Play 1 Task 1"
+    
+    - name: Play 1 Task 2
+      debug:
+        msg: "Play 1 Task 2"
+
+- name: Multiplay 2
+  hosts: local
+  connection: local
   tasks:
-    - name: Task 2
-      ansible.builtin.debug:
-        msg: "Hi from Task 2"
+    - name: Play 2 Task 1
+      debug:
+        msg: "Play2 Task 1"
+
+    - name: Play 2 Task 2
+      debug:
+        msg: "Play 2 Task 2"  
 
