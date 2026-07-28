@@ -1,0 +1,8 @@
+---
+- name: Vars from Inventory
+  hosts: local
+  connection: local
+  tasks:
+    - name: Input from Inventory
+      debug:
+        msg: " {{ NAME }} is working {{ COMPANY }} from past {{ DURATION }} years"
