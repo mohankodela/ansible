@@ -2,6 +2,7 @@
 - name: conditions
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: install nginx
       package:
