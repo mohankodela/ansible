@@ -33,9 +33,9 @@
     - name: greater
       debug:
         msg: "Entered number is greater than 100"
-      when: {{ num }} > 100
+      when: num | int > 100
   
     - name: lesser
       debug:
         msg: "Entered number is less than 100"
-      when: {{ num }} < 100
+      when:  num | int < 100
