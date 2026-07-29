@@ -20,7 +20,7 @@
 #         name: roboshop
 #       when: user.rc != 0    
 
----
+
 - name: condition
   hosts: local
   connection: local
