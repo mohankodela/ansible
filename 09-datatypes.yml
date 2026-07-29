@@ -14,15 +14,15 @@
       Apache: 8
       Linux: 5
       Jboss: 7
-    tasks:
-      - name: pint user details key variables
-        debug:
-          msg:
-            - "Name: {{ NAME }}"
-            - "Age: {{AGE }}"
-      - name: pint companies list
-        debug:
-          msg: Skills are {{ Skills }}
-      - name: pint Experience mapped to each Skills
-        debug:
-          msg: Experience in {{ Experience }}
+  tasks:
+    - name: pint user details key variables
+      debug:
+        msg:
+          - "Name: {{ NAME }}"
+          - "Age: {{AGE }}"
+    - name: pint companies list
+      debug:
+        msg: Skills are {{ Skills }}
+    - name: pint Experience mapped to each Skills
+      debug:
+        msg: Experience in {{ Experience }}
