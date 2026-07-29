@@ -18,8 +18,8 @@
     - name: pint user details key variables
       debug:
         msg:
-          - "Name: {{ NAME }}"
-          - "Age: {{AGE }}"
+          - "Name: {{ User.NAME }}"
+          - "Age: {{ User.AGE }}"
     - name: pint companies list
       debug:
         msg: Skills are {{ Skills }}
