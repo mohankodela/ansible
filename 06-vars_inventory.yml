@@ -9,7 +9,8 @@
 
 ---
 - name: Vars from Inventory
-  hosts: node
+  hosts: local
+  connection: local
   tasks:
     - name: Input from Inventory
       debug:
