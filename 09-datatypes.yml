@@ -1,28 +1,28 @@
-- name: Datatypes
+---
+- name: datatypes
   hosts: local
   connection: local
   vars:
-    Name: "Mohan Krishna"
-    Age: "33"
+    User:
+      NAME: "Mohan Krishna"
+      AGE: 33
     Skills:
-      - Linux
       - Apache
-      - Shell
-      - DevOps
+      - Linux
+      - Jboss
     Experience:
-      Linux: 4
       Apache: 8
-      DevOps: 2
-    Professional: true
-  tasks:
-    - name: Printing key pair
-      ansible.builtin.debug:
-        msg:
-          - "Name: {{Name}}"
-          - "Age: {{Age}}"
-    - name: Printing List
-      ansible.builtin.debug:
-        msg: "Skills: {{Skills}}"
-    - name: Printing Map Values
-      ansible.builtin.debug:
-        msg: "Experience: {{Experience}}"
+      Linux: 5
+      Jboss: 7
+    tasks:
+      - name: pint user details key variables
+        debug:
+          msg:
+            - "Name: {{ NAME }}"
+            - "Age: {{AGE }}"
+      - name: pint companies list
+        debug:
+          msg: Skills are {{ Skills }}
+      - name: pint Experience mapped to each Skills
+        debug:
+          msg: Experience in {{ Experience }}
