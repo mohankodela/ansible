@@ -25,17 +25,18 @@
   hosts: local
   connection: local
   vars_prompt:
-    - name: number
+    - name: num
       prompt: Enter a number
+      private: false
   
   tasks:
     - name: greater
       debug:
         msg: "Entered number is greater than 100"
-      when: number > 100
+      when: num > 100
   
   tasks:
     - name: lesser
       debug:
         msg: "Entered number is less than 100"
-      when: number < 100
+      when: num < 100
