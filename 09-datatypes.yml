@@ -1,5 +1,6 @@
 - name: Datatypes
-  hosts: localhost
+  hosts: local
+  connection: local
   vars:
     Name: "Mohan Krishna"
     Age: "33"
