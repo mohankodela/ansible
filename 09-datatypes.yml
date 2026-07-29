@@ -20,9 +20,9 @@
         msg:
           - "Name: {{ User.NAME }}"
           - "Age: {{ User.AGE }}"
-    - name: pint companies list
+    - name: pint skills list
       debug:
         msg: Skills are {{ Skills }}
-    - name: pint Experience mapped to each Skills
+    - name: print experience mapped to each Skill
       debug:
         msg: Experience in {{ Experience }}
